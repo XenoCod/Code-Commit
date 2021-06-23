@@ -17,6 +17,23 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    //Recursive approach
+    static int bSearch(int arr[], int n, int low, int high, int x){
+
+        int mid=(low+high)/2;
+        if(low>high)
+            return -1;
+        if(arr[mid]==x)
+            return mid;
+        else if(arr[mid]>x)
+            return bSearch(arr, n, low,mid-1, x);
+        else
+            return bSearch(arr, n, mid+1, high, x);
+
+
+
+    }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter size");
@@ -28,5 +45,6 @@ public class BinarySearch {
         for(int i=0;i<n;i++)
             arr[i]=sc.nextInt();
         System.out.println(binarySearch(arr,n,x));
+        System.out.println(bSearch(arr, n, 0, n,x));
     }
 }
