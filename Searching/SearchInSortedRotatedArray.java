@@ -6,6 +6,13 @@ public class SearchInSortedRotatedArray {
     static int sortedRotated(int arr[], int n, int x){
         int low=0;
         int high=n-1;
+        //We know that atleast one of the element in this type of
+        // array will always be sorted and if the mid is smaller
+        // than the first element in the array then we definalty
+        // know that the subarray is sorted so we only
+        // check whether the searched element lies in the
+        // given range and if not then we check to the
+        // other side of the array
         while(low<=high){
             int mid=(low+high)/2;
             if(arr[mid]==x)
