@@ -2,6 +2,9 @@
 
 A simple challenge to myself to code daily &amp; improve my problem solving skills with DSA. All the problems are solved in JAVA from basics to Advance topics from GFG, Leetcode, InterviewBit, HackerRank etc..
 
+- Programming Language: JAVA
+
+- IDE used: IntelliJ Idea, VSCode.
 ## Acknowledgements
 
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
