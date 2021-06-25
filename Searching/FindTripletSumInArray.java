@@ -18,6 +18,8 @@ public class FindTripletSumInArray {
         return false;
     }
 
+
+
     static boolean tripletsSum(int arr[], int n, int x){
         for(int i=0;i<n;i++){
         if(pairSum(arr, i+1, n-1, x-arr[i]))
@@ -37,5 +39,6 @@ public class FindTripletSumInArray {
         for(int i=0;i<n;i++)
             arr[i]=sc.nextInt();
         System.out.println(tripletsSum(arr,n,x));
+
     }
 }
