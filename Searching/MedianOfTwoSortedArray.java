@@ -10,6 +10,28 @@ public class MedianOfTwoSortedArray {
         else we binary search for the element by either shifting it towords the left or right
         * */
         int begin=0, end=n1;
+        while (begin <= end) {
+
+            int i1=(begin+end)/2;//mid point of 1st array
+            int i2=((n1+n2)/2)-1;//midpoint of 2nd array
+            int min1=(i1==n1)?(Integer.MAX_VALUE):arr1[i1];//min element of the 1st array i,e the mid point element
+            int max1=(i1==0)?Integer.MIN_VALUE:arr1[i1-1];//element to the left of the midpoint for comparison
+            int min2=(i2==n2)?Integer.MAX_VALUE:arr2[i2];//midpoint element of the 2nd array
+            int max2=(i2==0)?Integer.MIN_VALUE:arr2[i2-1];//left most element of arr2 used for comparison
+
+            if(max1<=min2 && max2<=min1)
+                if((n1+n2)%2==0)
+                    return (double) (Math.max(max1,max2)+(Math.min(min1,min2)))/2;
+                else
+                    return (double) Math.max(max1,max2);
+
+            else if(max1>min2)
+                end=i1-1;
+            else
+                begin=i1+1;
+
+        }
+        return 0;
 
     }
     public static void main(String[] args) {
@@ -24,7 +46,7 @@ public class MedianOfTwoSortedArray {
         int n2= sc.nextInt();
         int arr2[]= new int[n2];
         System.out.println("Enter elements for 2nd array");
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n2;i++)
             arr2[i]=sc.nextInt();
         System.out.println(median(arr1, arr2, n,n2));
     }
