@@ -31,7 +31,8 @@ public class FloyddLoopAlgo {
 
     }
 
-    //If the array contains 0s then we add the +1 to slow and fast value to avoid self loops and we want the value rather than the index of the array element
+    //If the array contains 0s then we add the +1 to slow and fast value to avoid self loops
+    // and so we just assume all the index are starting from element 1
     static int mostReapeatedWith0s(int arr[], int n){
         int slow =arr[0]+1;
         int fast=arr[0]+1;
