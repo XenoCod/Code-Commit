@@ -1,5 +1,6 @@
 package Codes.Searching;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MedianOfTwoSortedArray {
@@ -49,5 +50,6 @@ public class MedianOfTwoSortedArray {
         for(int i=0;i<n2;i++)
             arr2[i]=sc.nextInt();
         System.out.println(median(arr1, arr2, n,n2));
+
     }
 }
