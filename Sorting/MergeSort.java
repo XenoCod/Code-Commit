@@ -7,8 +7,6 @@ public class MergeSort {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter size");
         int n=sc.nextInt();
-        System.out.println("Enter the no of students");
-        int k=sc.nextInt();
         int arr[]= new int[n];
         System.out.println("Enter elements");
         for(int i=0;i<n;i++)
