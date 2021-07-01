@@ -2,27 +2,25 @@ package Codes.Sorting;
 
 import java.util.Scanner;
 
-public class MergeTwoSortedArrays {
-    static void merge(int arr1[], int arr2[], int m, int n){
-        int i=0, j=0;
+public class IntersectionOFTwoArrays {
+    static  void intersection(int arr1[], int arr2[], int m, int n){
+        int i=0,j=0;
         while(i<m && j<n){
-            if(arr1[i]<arr2[j]){
-                System.out.println(arr1[i]);
+            if(i>0 && arr1[i]==arr2[i-1]){
                 i++;
+                continue;
             }
-            else{
-                System.out.println(arr2[i]);
+            if(arr1[i]<arr2[j])
+                i++;
+            else if(arr1[i]>arr2[j])
+                j++;
+            else {
+                System.out.print(arr1[i]+" ");
+                i++;
                 j++;
             }
         }
-        while(i<m){
-            System.out.println(arr1[i]);
-            i++;
-        }
-        while(j<n) {
-            System.out.println(arr2[j]);
-            j++;
-        }
+
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -38,6 +36,6 @@ public class MergeTwoSortedArrays {
         System.out.println("Enter elements for array 2");
         for(int i=0;i<n;i++)
             arr2[i]=sc.nextInt();
-        merge(arr1,arr2,m,n);
+        intersection(arr1,arr2,m,n);
     }
 }
