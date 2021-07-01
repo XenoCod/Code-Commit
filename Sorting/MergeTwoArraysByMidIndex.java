@@ -15,7 +15,7 @@ public class MergeTwoArraysByMidIndex {
             right[i]=arr[mid+i+1];
 
         //Normal merge sort algo
-        int i=0,j=0,k=0;
+        int i=0,j=0,k=low;
         while(i<n1 && j<n2){
             if(left[i]<=right[j]){
                 arr[k]=left[i];
