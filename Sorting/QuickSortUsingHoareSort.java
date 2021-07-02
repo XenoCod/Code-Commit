@@ -2,29 +2,34 @@ package Codes.Sorting;
 
 import java.util.Scanner;
 
-public class QuickSortUsingLomuto {
+public class QuickSortUsingHoareSort {
     static int partition(int arr[], int l, int h){
-        int pivot=arr[h];
+        int pivot=arr[l];
         int i=l-1;
-        for(int j=l;j<=h-1;j++){
-            if(arr[j]<pivot){
+        int j=h+1;
+        while(true){
+            do{
                 i++;
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-            }
+            }while (arr[i]<pivot);
+
+            do{
+                j--;
+            }while (arr[j]>pivot);
+
+            if(i>=j)
+                return j;
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+
         }
-        int temp=arr[i+1];
-        arr[i+1]=arr[h];
-        arr[h]=temp;
-        return i+1;
+
     }
     static void qSort(int arr[], int l, int h){
-
-        if(l<h) {
-            int pivot = partition(arr,l,h );
-            qSort(arr,l,pivot-1);
-            qSort(arr,pivot+1,h);
+        if(l<h){
+            int pivot=partition(arr, l, h);
+            qSort(arr, l,pivot);
+            qSort(arr, pivot+1, h);
         }
     }
     public static void main(String[] args) {
