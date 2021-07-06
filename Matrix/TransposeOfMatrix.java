@@ -1,7 +1,7 @@
 package Codes.Matrix;
 
 public class TransposeOfMatrix {
-    static int n=4;
+//    static int n=4;
 
     static void swap(int arr[][], int i, int j){
         int temp=arr[i][j];
@@ -9,6 +9,7 @@ public class TransposeOfMatrix {
         arr[j][i]=temp;
     }
     static void transposeMatrix(int arr[][]){
+        int n= arr.length;
         for(int i=0;i<n;i++) {
             for (int j = i + 1; j < n; j++)
                 swap(arr, i, j);
@@ -22,6 +23,7 @@ public class TransposeOfMatrix {
                 {13, 14, 15, 16}};
 
         transposeMatrix( arr);
+        int n=arr.length;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++)
                 System.out.print(arr[i][j]+" ");
