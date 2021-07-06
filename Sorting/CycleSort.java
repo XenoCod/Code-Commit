@@ -17,7 +17,7 @@ public class CycleSort {
             int temp=item;
             item=arr[pos];
             arr[pos]=temp;
-            
+
             while(pos!=cs){
                 pos=cs;
                 for(int i=cs+1;i<n;i++)
