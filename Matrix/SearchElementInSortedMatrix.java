@@ -25,7 +25,7 @@ public class SearchElementInSortedMatrix {
                 {6, 7, 8, 9, 10},
                 {11, 12, 13, 14 , 15},
                 {16, 17, 18, 19, 20}};
-        int k=11;//the elment to be searched
+        int k=12;//the elment to be searched
         printLocation(arr, k);
     }
 }
