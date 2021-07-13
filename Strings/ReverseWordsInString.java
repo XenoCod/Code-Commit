@@ -24,11 +24,12 @@ public class ReverseWordsInString {
         reverse(str,start,n-1);
         reverse(str,0,n-1);
     }
+
     public static void main(String[] args) {
         String s="Welcome to gfg";
         char ch[]=s.toCharArray();
         int n=s.length();
         reverseWords(ch, s.length());
-        System.out.println(ch);
+        System.out.println(new String(ch));
     }
 }
