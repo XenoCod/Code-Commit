@@ -3,6 +3,7 @@ package Codes.LinkedLists;
 
 class Node{
     int data;
+
     Node next,random;
 
     Node(int x){
