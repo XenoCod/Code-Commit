@@ -3,10 +3,14 @@ package Codes.LinkedLists;
 
 class Node{
     int data;
-    Node next;
+    Node next,random;
+
     Node(int x){
         data=x;
         next=null;
+        random=null;
+
+
     }
 }
 
