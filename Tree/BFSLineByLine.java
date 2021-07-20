@@ -7,6 +7,7 @@ public class BFSLineByLine {
     static void levelOrder(Node root){
         Queue<Node> q= new LinkedList<>();
         q.add(root);
+
         while(!q.isEmpty()){
             int count=q.size();
             for(int i=0;i<count;i++){

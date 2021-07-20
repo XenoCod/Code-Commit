@@ -9,6 +9,7 @@ public class BreathFirstSearch {
         if(root==null)return;
         Queue<Node> q=new LinkedList<>();
         q.add(root);
+
         while(!q.isEmpty()){
             Node curr=q.poll();
             System.out.print(curr.key+" ");

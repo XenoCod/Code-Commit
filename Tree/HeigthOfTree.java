@@ -15,5 +15,6 @@ public class HeigthOfTree {
         tree.right.left=new Node(40);
         tree.right.right=new Node(50);
         System.out.println(height(tree));
+
     }
 }

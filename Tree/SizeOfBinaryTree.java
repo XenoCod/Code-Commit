@@ -17,6 +17,7 @@ public class SizeOfBinaryTree {
         root.left.right.right=new Node(15);
 
         root.right.right=new Node(6);
+        
         System.out.println(heightOfTree(root));
     }
 

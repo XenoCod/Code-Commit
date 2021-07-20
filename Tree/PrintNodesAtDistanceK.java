@@ -18,7 +18,7 @@ public class PrintNodesAtDistanceK {
         tree.right=new Node(30);
         tree.right.left=new Node(40);
         tree.right.right=new Node(50);
-        int k=2;
+        int k=3;
         printNodes(tree, k);
     }
 }
