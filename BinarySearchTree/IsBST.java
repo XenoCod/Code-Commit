@@ -1,5 +1,7 @@
 package Codes.BinarySearchTree;
 
+
+
 public class IsBST {
     final  static int min=Integer.MIN_VALUE, max= Integer.MAX_VALUE;
     static boolean isBST(Node root, int min, int max){
@@ -17,6 +19,7 @@ public class IsBST {
         root.right.left=new Node(85);
 //        root.right.left=new Node(79); //check for false
         root.right.right= new Node(100);
+
 
         System.out.println(isBST(root, min, max));
     }
