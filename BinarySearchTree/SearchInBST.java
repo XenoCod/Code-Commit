@@ -1,13 +1,16 @@
 package Codes.BinarySearchTree;
 
-class Node{
+class Node {
     int key;
     Node left, right;
-    Node(int k){
-        key=k;
-        left=right=null;
-    }
+    int lCount;
 
+    Node(int k) {
+        key = k;
+        left = right = null;
+        lCount = 0;
+
+    }
 }
 
 public class SearchInBST {

@@ -32,10 +32,10 @@ public class TreeSetAndTreeMap {
         System.out.println(tm);
         for(Map.Entry<Integer, String> i:tm.entrySet())
             System.out.println(i.getKey()+" "+i.getValue());
-        System.out.println(tm.lowerKey(30));
-        System.out.println(tm.higherKey(30));
-        System.out.println(tm.floorKey(30));
-        System.out.println(tm.ceilingKey(30));
+        System.out.println(tm.lowerEntry(30));
+        System.out.println(tm.higherEntry(30));
+        System.out.println(tm.floorEntry(30));
+        System.out.println(tm.ceilingEntry(30));
 
     }
 }
