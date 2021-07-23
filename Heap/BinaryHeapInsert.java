@@ -11,6 +11,14 @@ public class BinaryHeapInsert {
         m.insert(100);
         m.insert(25);
         m.insert(45);
+        System.out.println(m.extractMin());
+        m.print();
+        System.out.println();
+        m.decreaseKey(3, 5);
+        m.print();
+        m.deleteKey(4);
+        m.print();
+
 
     }
 }
