@@ -32,7 +32,7 @@ public class SwapTwoIncorrectBSTNode {
         first.key=second.key;
         second.key=temp;
         inOrder(root);
-       
+
 
 
     }
