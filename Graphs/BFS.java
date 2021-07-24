@@ -77,7 +77,7 @@ public class BFS {
         addEdges(adj, 2, 4);
         addEdges(adj, 3, 4);
 //        printGraph(adj);
-//        bfs(adj, v, 0);// bfs when the source is passed
+        bfs(adj, v, 0);// bfs when the source is passed
 
         //bfs when no source is passed and graph may be disconnected
         bfsDis(adj,v);
