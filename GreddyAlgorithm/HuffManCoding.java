@@ -41,7 +41,7 @@ public class HuffManCoding {
             printTree(root.right,str+"1");
     }
 
-    
+
     public static void main(String[] args) {
         char arr[]={'a', 'd', 'b', 'e', 'f'};
         int val[]={10, 50, 20, 40, 80};
