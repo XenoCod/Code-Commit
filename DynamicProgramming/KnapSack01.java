@@ -22,10 +22,21 @@ public class KnapSack01 {
         }
         return dp[n][weight];
     }
+
+    public static int knapSackRec(int wt[], int val[], int weight, int n){
+        if(n==0 || weight==0)
+            return 0;
+        if(wt[n-1]>weight)
+            return knapSackRec(wt, val, weight, n-1);
+        else
+            return Math.max(knapSackRec(wt, val, weight, n-1), val[n-1]+knapSackRec(wt, val, weight-wt[n-1], n-1));
+    }
+
     public static void main(String[] args) {
         int val[]={10, 40, 30, 50};
         int wt[]={5,4,6,3};
         int weight=10;
         System.out.println(knapSack(wt, val, weight));
+        System.out.println(knapSackRec(wt, val, weight, wt.length));
     }
 }
