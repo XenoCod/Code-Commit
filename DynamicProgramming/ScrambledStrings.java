@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class ScrambledStrings {
     static HashMap <String, Boolean> hmap= new HashMap<>();
-   
+
     static boolean scrambleStrings(String a, String b){
         if(a.equals(b))
             return true;
