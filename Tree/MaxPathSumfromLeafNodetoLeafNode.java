@@ -1,15 +1,21 @@
 package Codes.Tree;
 
-public class MaxPathSumFromAnyNodeToAnyNode {
+public class MaxPathSumfromLeafNodetoLeafNode {
     static int res=Integer.MIN_VALUE;
     static int maxSum(Node root){
         if(root==null) return 0;
+        if(root.left==null && root.right==null) return root.key;
         int lh= maxSum(root.left);
         int rh=maxSum(root.right);
-        int temp = Math.max(Math.max(lh, rh) + root.key, root.key);
-        int ans = Math.max(temp, lh + rh + root.key);
-        res = Math.max(res, ans);
-        return temp;
+        if(root.left==null) return lh+root.key;
+        if(root.right==null) return rh+ root.key;
+
+            int temp = Math.max(Math.max(lh, rh) + root.key, root.key);
+            int ans = Math.max(temp, lh + rh + root.key);
+            res = Math.max(res, ans);
+            return temp;
+
+
 
 
 
