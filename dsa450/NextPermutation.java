@@ -24,7 +24,7 @@ public class NextPermutation {
         while(l<r) swap(arr, l++, r--);
     }
     public static void main(String[] args) {
-        int arr[]={1,2,3};
+        int arr[]={1,5, 8, 9};
         nextPermutation(arr);
         for(int i:arr)
             System.out.print(i+" ");
