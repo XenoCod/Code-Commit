@@ -1,4 +1,4 @@
-package Codes.BinarySearchTree;
+package BinarySearchTree;
 
 class Node {
     int key;

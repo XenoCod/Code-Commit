@@ -1,4 +1,4 @@
-package Codes.Graphs;
+package Graphs;
 
 import java.util.ArrayList;
 
@@ -19,6 +19,11 @@ public class DFS {
         dfsRec(adj, 0,visited);
 
     }
+    static void addEdges(ArrayList<ArrayList<Integer>> adj, int u, int v) {
+    	adj.get(u).add(v);
+    	adj.get(v).add(u);
+    }
+    
     public static void main(String[] args) {
         int v=5;
         ArrayList<ArrayList<Integer>> adj= new ArrayList<>();
@@ -35,6 +40,7 @@ public class DFS {
         dfs(adj,0, v);
 
     }
+    
 
 
 }

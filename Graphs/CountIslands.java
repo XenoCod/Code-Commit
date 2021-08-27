@@ -1,4 +1,4 @@
-package Codes.Graphs;
+package Graphs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -20,6 +20,11 @@ public class CountIslands {
                 }
 
         }
+    }
+    static void addEdge(ArrayList<ArrayList<Integer>>adj, int u, int v){
+        adj.get(u).add(v);
+        adj.get(v).add(u);
+
     }
 
     static int countIslands(ArrayList<ArrayList<Integer>>adj, int v){

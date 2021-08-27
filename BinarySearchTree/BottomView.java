@@ -1,4 +1,4 @@
-package Codes.BinarySearchTree;
+package BinarySearchTree;
 
 import java.util.LinkedList;
 import java.util.Map;
@@ -32,7 +32,8 @@ public class BottomView {
         root.right=new Node(80);
         root.left.left= new Node(4);
         root.left.right= new Node(10);
-        root.right.left= new Node(8);
+        root.right.left= new Node(8)
+        		;
         root.right.right= new Node(100);
         bottomView(root);
     }

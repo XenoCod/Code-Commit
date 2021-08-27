@@ -1,4 +1,4 @@
-package Codes.Graphs;
+package Graphs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -30,6 +30,10 @@ public class CycleDetectInDirectedGraph {
             count++;
         }
         return (count!=v);
+    }
+    static void addEdge(ArrayList<ArrayList<Integer>>adj, int u, int v) {
+    	adj.get(u).add(v);
+    	adj.get(v).add(u);
     }
     public static void main(String[] args) {
         int v=5;

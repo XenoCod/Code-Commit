@@ -1,11 +1,18 @@
-package Codes.Graphs;
+package Graphs;
 
 import java.util.ArrayList;
+
+//TopoLogical sort means it there is an edge u-> v then u should always appear earlier in the graph
+//It only applies to Directed Acylic Graph (DAG)
+
 import java.util.Stack;
 
-import static Codes.Graphs.TopologicalSortingKahnAlgo.addEdge;
 
 public class TopologicalSortDFS {
+	static void addEdges(ArrayList<ArrayList<Integer>>adj, int u, int v) {
+		adj.get(u).add(v);
+		adj.get(v).add(u);
+	}
     static void topDFS(ArrayList<ArrayList<Integer>>adj, int v){
         Stack<Integer> st= new Stack<>();
         boolean visited[]= new boolean[v];
@@ -26,6 +33,7 @@ public class TopologicalSortDFS {
         st.push(s);
 
     }
+    
 
     public static void main(String[] args) {
         int v=5;
@@ -33,11 +41,11 @@ public class TopologicalSortDFS {
         for(int i=0;i<v;i++)
             adj.add(new ArrayList<>());
 
-        addEdge(adj,0, 1);
-        addEdge(adj,1, 3);
-        addEdge(adj,2, 3);
-        addEdge(adj,3, 4);
-        addEdge(adj,2, 4);
+        addEdges(adj,0, 1);
+        addEdges(adj,1, 3);
+        addEdges(adj,2, 3);
+        addEdges(adj,3, 4);
+        addEdges(adj,2, 4);
         topDFS(adj,v);
     }
 }

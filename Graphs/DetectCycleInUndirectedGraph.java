@@ -1,8 +1,8 @@
-package Codes.Graphs;
+package Graphs;
 
 import java.util.ArrayList;
 
-import static Codes.Graphs.BFS.addEdges;
+//import static Codes.Graphs.BFS.addEdges;
 
 public class DetectCycleInUndirectedGraph {
 
@@ -26,6 +26,11 @@ public class DetectCycleInUndirectedGraph {
                 if(findCycle(adj, i, visited, -1))
                     return true;
         return false;
+    }
+    static void addEdges(ArrayList<ArrayList<Integer>>adj, int u, int v){
+        adj.get(u).add(v);
+        adj.get(v).add(u);
+
     }
     public static void main(String[] args) {
         int v=4;
