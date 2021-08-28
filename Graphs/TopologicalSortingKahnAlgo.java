@@ -9,7 +9,8 @@ import java.util.Queue;
 
 public class TopologicalSortingKahnAlgo {
     static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) {
-        adj.get(u).add(v);
+        adj.get(u).add(v);//As it is directed graph we only add one edge stating the direction
+        
 //        adj.get(v).add(u);
         
 
