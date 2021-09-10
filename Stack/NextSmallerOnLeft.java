@@ -24,7 +24,7 @@ public class NextSmallerOnLeft {
 	}
 	public static void main(String[] args) {
 		
-		int nums[]= {100, 80, 60, 70, 60, 75, 85};
+		int nums[]= {2,1,5,6,2,3};
 		NextSmallerOnLeft obj= new NextSmallerOnLeft();
 		obj.nsel(nums);
 	}

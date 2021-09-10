@@ -30,7 +30,7 @@ public class NextSmallerOnRight {
 	public static void main(String[] args) {
 		NextSmallerOnRight obj= new NextSmallerOnRight();
 //		int nums[]= {1,4,6,2,5,9};
-		int nums[]= {8,4,6,2,3};
+		int nums[]= {2,1,5,6,2,3};
 		
 		obj.nse(nums);
 	}
