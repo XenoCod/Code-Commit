@@ -6,6 +6,8 @@ import java.util.Stack;
 
 public class NextSmallerOnRight {
 	
+	//Whenever calculating from the right Always reverse the list to get the output
+	
 	void nse(int nums[]) {
 		Stack<Integer> st= new Stack<>();
 		ArrayList<Integer> list= new ArrayList<>();
@@ -28,7 +30,7 @@ public class NextSmallerOnRight {
 	public static void main(String[] args) {
 		NextSmallerOnRight obj= new NextSmallerOnRight();
 //		int nums[]= {1,4,6,2,5,9};
-		int nums[]= {4, 5, 2, 10, 8};
+		int nums[]= {8,4,6,2,3};
 		
 		obj.nse(nums);
 	}
