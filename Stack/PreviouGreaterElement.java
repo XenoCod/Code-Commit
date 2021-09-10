@@ -1,4 +1,5 @@
-package Codes.Stack;
+package Stack;
+//Aka next greater element to the left
 
 import java.util.ArrayDeque;
 
@@ -11,7 +12,7 @@ public class PreviouGreaterElement {
             while(!s.isEmpty() && s.peek()<=arr[i])
                 s.pop();
             int pos=s.isEmpty()?-1:s.peek();
-            System.out.println(pos);
+            System.out.print(pos+" ");
             s.push(arr[i]);
         }
     }

@@ -1,4 +1,4 @@
-package Codes.Stack;
+//package Codes.Stack;
 
 
 import java.util.ArrayDeque;
@@ -37,6 +37,7 @@ class YStack{
 
 
 public class getMinInStack {
+	
     public static void main(String[] args) {
         YStack s= new YStack();
         s.push(5);
