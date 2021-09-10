@@ -11,7 +11,7 @@ public class NextLargerElement {
 		for(int i=nums.length-1; i>=0; i--) {
 			if(st.empty()) list.add(-1);
 			else {
-				while(st.peek() <= nums[i]) st.pop();
+				while(!st.isEmpty() && st.peek() <= nums[i]) st.pop();
 				if(st.isEmpty()) list.add(-1);
 				else list.add(st.peek());
 			}
@@ -22,8 +22,9 @@ public class NextLargerElement {
 		System.out.println(list);
 		
 	}
+	
 	public static void main(String[] args) {
-		int arr[]= {1,3,2,4,3,2,9};
+		int arr[]= {10,11,12,14,19,21,29};
 		NextLargerElement obj= new NextLargerElement();
 		obj.nge(arr);
 	}
