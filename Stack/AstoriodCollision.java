@@ -19,6 +19,7 @@ public class AstoriodCollision {
             res[i]= st.pop();
         for(int i:res) System.out.print(i+" ");
 	}
+	
 	public static void main(String[] args) {
 		AstoriodCollision obj= new AstoriodCollision();
 		obj.getCollision(new int [] {5, 10, -5});
