@@ -18,12 +18,12 @@ public class IterativePostOrder {
                 current = current.left;
             }else{
                 TreeNode temp = st1.peek().right;
-                if (temp == null) {
+                if (temp == null)/* this condition becomes true when right most node isv visted*/ {
                     temp = st1.pop();
-                    postOrder.add(temp.data);
+                    postOrder.add(temp.data);//head
                     while (!st1.isEmpty() && temp == st1.peek().right) {
                         temp = st1.pop();
-                        postOrder.add(temp.data);
+                        postOrder.add(temp.data);//right
                     }
                 } else {
                     current = temp;
