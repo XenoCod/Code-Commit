@@ -1,4 +1,4 @@
-package Codes.Tree;
+package Tree;
 
 public class PrintLeftViewOfTree {
     static  int maxLevel=0;
