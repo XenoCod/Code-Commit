@@ -8,7 +8,7 @@ import java.util.Queue;
 public class BurnTheTreeFromSingleNode {
 	
 	//Similar to print nodes at distance k with just count the no of times
-	
+	 
 	
 	static void mapParents(TreeNode root, Map<TreeNode, TreeNode> parents) {
 		Queue<TreeNode> q= new LinkedList<>();
