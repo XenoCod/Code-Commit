@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class SerialLizeAndDeSerializeBinaryTree {
+	
 	static String serialize(TreeNode root) {
 		Queue<TreeNode> q= new LinkedList<>();
 		q.add(root);
@@ -51,11 +52,12 @@ public class SerialLizeAndDeSerializeBinaryTree {
 		
 		if(root == null) return;
 		
-		System.out.println(root.data);
+		System.out.print (root.data);
 		
 		traverse(root.left);
 		traverse(root.right);
 	}
+	
 	public static void main(String[] args) {
 		TreeNode root= new TreeNode(1);
 		root.left= new TreeNode(2);
