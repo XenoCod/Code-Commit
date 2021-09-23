@@ -19,7 +19,7 @@ public class RottingOranges {
 		if(fresh_count ==0) return 0; //if no of fresh organes is 0 then the time taken would be zero
 		int dirs[][]= {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 		
-		while(!q.isEmpty()) {
+		while(!q.isEmpty() && fresh_count > 0) {
 			times++;
 			int size=q.size();
 			for(int i=0; i<size; i++) {
@@ -38,7 +38,7 @@ public class RottingOranges {
 			}
 		}
 		
-		return fresh_count == 0 ? times-1 : -1;
+		return fresh_count == 0 ? times : -1;
 
 	}
 
