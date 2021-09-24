@@ -104,8 +104,8 @@ public class AccountMerge {
 	            list.add(0, userName);
 	            res.add(list);
 	        }
-//	        return res;
-//	        System.out.println(res);
+
+	        //Printing the result
 	        for(List<String> result:res) System.out.println(result);
 	}
 	public static void main(String[] args) {
