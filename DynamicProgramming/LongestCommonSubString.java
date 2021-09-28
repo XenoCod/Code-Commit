@@ -1,4 +1,4 @@
-package Codes.DynamicProgramming;
+package Codes;
 
 public class LongestCommonSubString {
     static int longestSubString(String a, String b){
