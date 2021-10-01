@@ -9,7 +9,7 @@ public class IntegerBreak {
             // (8,1),(7,2),(6,3),(5,4),(4,3),(3,2),(2,1),(1,0)
             // dp[8]= max(dp[8], max(j, dp[j]) * max(i-j, dp[i-j]))
 			for(int j=1; j<=i/2; j++) {
-				dp[i]= Math.max(dp[i],  Math.max(dp[j], j) * Math.max(i-j, dp[i-j]));
+				dp[i]= Math.max(dp[i],  Math.max(j, dp[j]) * Math.max(i-j, dp[i-j]));
 			}
 		}
 		System.out.println(dp[n]);
