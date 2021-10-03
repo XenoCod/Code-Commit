@@ -1,7 +1,7 @@
 package DynamicProgramming;
 
 public class JumpGame {
-	static boolean canJump(int nums[]) {
+	boolean canJump(int nums[]) {
 		// DP definition: The farthest index we can reach given allowed steps from 0 to i
 		// DP decision & relationship: It's either the dp[i - 1] or i + nums[i] whichever one is larger
 		// DP condition:
@@ -16,14 +16,17 @@ public class JumpGame {
 		            if(dp[i-1] < i ) return false;
 		            
 		            dp[i]= Math.max(i+ nums[i], dp[i-1]);
-		            
+		            System.out.println(dp[n-2]+"helo");
 		            if(dp[i] >= n-1) return true;
 		        }
+		        
+		        System.out.println(dp[n-2]+"helo");
 		        return dp[n-2] >= n-1;
 	}
 	public static void main(String[] args) {
-		int nums[] = { 2, 3, 1, 1, 4 };
-		System.out.println(canJump(nums));
+		int nums[] = { 2,3,1,1,4};
+		JumpGame obj= new JumpGame();
+		System.out.println(obj.canJump(nums));
 //	Return true if you can reach the last index, or false otherwise.
 	}
 }
