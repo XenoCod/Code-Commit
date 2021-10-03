@@ -16,7 +16,7 @@ public class JumpGame {
 		            if(dp[i-1] < i ) return false;
 		            
 		            dp[i]= Math.max(i+ nums[i], dp[i-1]);
-		            System.out.println(dp[n-2]+"helo");
+		        
 		            if(dp[i] >= n-1) return true;
 		        }
 		        
