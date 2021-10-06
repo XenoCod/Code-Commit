@@ -1,13 +1,15 @@
 ///package Codes.Stack;
 
-import java.util.ArrayDeque;
+import java.util.Stack;
 
 public class BalancedParantheis {
-    public static boolean match(char a, char b){
+	
+    public boolean match(char a, char b){
         return ((a=='(' && b==')') || (a=='{' && b=='}') || (a=='[' && b==']'));
     }
-    public static boolean isValid(String s){
-        ArrayDeque<Character> deq= new ArrayDeque<>();
+    
+    public boolean isValid(String s){
+    	Stack<Character> deq= new Stack<>();
         for(int i=0;i<s.length();i++){
             char c=s.charAt(i);
             if(c=='(' || c=='{' || c=='['){
@@ -26,8 +28,10 @@ public class BalancedParantheis {
 
         return (deq.isEmpty());
     }
+    
     public static void main(String[] args) {
-        String s="()[]{}";
-        System.out.println(isValid(s));
+        String s="({[]})";
+        BalancedParantheis obj= new BalancedParantheis();
+        System.out.println(obj.isValid(s));
     }
 }
