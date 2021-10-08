@@ -54,6 +54,17 @@ class Trie{
 		}
 		return true;
 	}
+	
+	public void delete(String word) {
+		TrieNode curr= root;
+		
+		for(int i=0; i< word.length(); i++) {
+			char ch= word.charAt(i);
+			
+			curr=curr.children[ch -'a'];
+		}
+		curr.isEnd= false;
+	}
 }
 
 
@@ -67,6 +78,9 @@ public class Trie_Implentation {
 		System.out.println(t.search("aditya"));
 		System.out.println(t.startsWith("adi"));
 		System.out.println(t.startsWith("di"));
+		System.out.println(t.search("aditya"));
+		t.insert("singh");
+		t.delete("aditya");
 		System.out.println(t.search("aditya"));
 	}
 }
