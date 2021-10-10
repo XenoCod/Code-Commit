@@ -1,4 +1,4 @@
-package Codes.DynamicProgramming;
+
 
 public class SubsetSum {
     static boolean subsetSum(int arr[], int sum){

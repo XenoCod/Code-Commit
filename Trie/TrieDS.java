@@ -22,8 +22,11 @@ class Trie{
 
 			curr= curr.children[ch -'a'];
 		}
+
 		curr.isEnd= true;
 	}
+
+
 
 	public boolean search(String word){
 		TrieNode curr= root;
@@ -36,8 +39,11 @@ class Trie{
 
 			curr= curr.children[ch - 'a'];
 		}
+
 		return curr.isEnd;
 	}
+
+
 
 	public boolean startsWith(String word){
 		TrieNode curr= root;
@@ -53,6 +59,7 @@ class Trie{
 		return true;
 	}
 }
+
 
 
 public class TrieDS{

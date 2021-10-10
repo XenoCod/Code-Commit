@@ -1,4 +1,3 @@
-package Codes.DynamicProgramming;
 
 public class EditDistance {
     //Iterative approach
