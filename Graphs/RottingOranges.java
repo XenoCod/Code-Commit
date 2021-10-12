@@ -1,4 +1,4 @@
-package Graphs;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,6 +6,7 @@ import java.util.Queue;
 public class RottingOranges {
 	private static int getRotten(int grid[][]) {
 		int m= grid.length, n=grid[0].length;
+		//Implememting a simple DFS
 		
 		Queue<int []> q= new LinkedList<>();
 		int fresh_count=0, times=0;
@@ -44,7 +45,7 @@ public class RottingOranges {
 
 	public static void main(String[] args) {
 		int grid[][] = { { 2, 1, 1 }, { 1, 1, 0 }, { 0, 1, 1 } };
-		System.out.println(getRotten(grid));
+		System.out.println("The min time to taken to make all organes rotten "+ getRotten(grid));
 	}
 
 }
