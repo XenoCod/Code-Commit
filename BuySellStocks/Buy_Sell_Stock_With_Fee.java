@@ -32,6 +32,7 @@ public class Buy_Sell_Stock_With_Fee{
 			int new_bought_state_profit= 0;
 			int new_sold_state_profit= 0;
 
+			//Calcluating when buying the stock
 			if(old_sold_state_profit - prices[i] > old_bought_state_profit){
 				new_bought_state_profit = old_sold_state_profit - prices[i];
 			}
@@ -39,6 +40,8 @@ public class Buy_Sell_Stock_With_Fee{
 				new_bought_state_profit = old_bought_state_profit;
 			}
 
+
+			//Calcuating when selling the stock
 			if(old_bought_state_profit + prices[i] - fee > old_sold_state_profit){
 				new_sold_state_profit =old_bought_state_profit + prices[i] - fee;
 			}
@@ -46,6 +49,8 @@ public class Buy_Sell_Stock_With_Fee{
 				new_sold_state_profit= old_sold_state_profit;
 			}
 
+
+			//Updaitng the old values
 			old_bought_state_profit= new_bought_state_profit;
 			old_sold_state_profit= new_sold_state_profit;
 		}
