@@ -5,7 +5,7 @@ public class MinCostTreeFromLeaf{
 		return solve(nums, 0, n-1, memo);
 	}
 
-	private int solve(int nums[], int startIndex, int endIndex, int memo[][]){
+	int solve(int nums[], int startIndex, int endIndex, int memo[][]){
 		if(startIndex >= endIndex) return 0;
 
 		if(memo[startIndex][endIndex] != 0) return memo[startIndex][endIndex];
