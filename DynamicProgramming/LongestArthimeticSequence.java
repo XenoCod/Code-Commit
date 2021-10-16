@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 public class LongestArthimeticSequence{
 	int las(int nums[]){
@@ -17,6 +17,8 @@ public class LongestArthimeticSequence{
 
 			}
 		}
+
+		
 
 		return res + 1;
 	}
