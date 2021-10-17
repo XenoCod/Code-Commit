@@ -28,7 +28,7 @@ class TaskSchedular{
 
 				temp.setValue(temp.getValue() -1);
 				list.add(temp);
-				System.out.println(list);
+				// System.out.println(list);
 
 				//One interval is filled
 				interval--;
