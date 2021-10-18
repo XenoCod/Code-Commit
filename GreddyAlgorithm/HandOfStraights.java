@@ -24,6 +24,8 @@ class HandOfStraights{
        }
        return true;
       }
+
+      
    public static void main(String[] args) {
       int nums[]={ 1,2,3,6,2,3,4,7,8};
       int grpSize= 3;

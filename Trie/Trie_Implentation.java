@@ -1,9 +1,10 @@
-package Trie;
+
 
 class TrieNode{
 	TrieNode [] children= new TrieNode[26];
 	boolean isEnd;
 }
+
 
 class Trie{
 	TrieNode root;
