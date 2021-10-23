@@ -4,7 +4,7 @@ A simple challenge to myself to code daily &amp; improve my problem solving skil
 
 - Programming Language: JAVA
 
-- IDE used: IntelliJ Idea, VSCode.
+- IDE used: IntelliJ Idea, VSCode, Sublime Text & Eclipse
 ## Acknowledgements
 
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
