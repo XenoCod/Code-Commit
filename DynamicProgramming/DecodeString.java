@@ -1,4 +1,4 @@
-import java.util.ArrayDeque;
+import java.util.*;
 
 
 class DecodeString{
@@ -37,7 +37,8 @@ class DecodeString{
 
 	public static void main(String[] args) {
 		String s="3[a]2[bc]";
-				System.out.println(decodeString(s));
+		DecodeString obj= new DecodeString();
+				System.out.println(obj.decodeString(s));
 
 		// Input: s = "3[a]2[bc]"
 		// Output: "aaabcbc"
