@@ -44,6 +44,7 @@ class SumRootToLeafNodes{
 // Therefore, sum = 12 + 13 = 25.
 
 		int root[]={1,2,3};
+                System.out.println(rootToLeaf(root));
 		rootToLeaf(root);
 
 	}
