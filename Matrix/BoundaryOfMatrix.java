@@ -4,7 +4,7 @@ public class BoundaryOfMatrix {
     static int r=4, c=4;
     static void printBoundary(int arr[][]){
         //Handing the corner cases
-        if(r==1)
+        if(r==1)jj
             for(int i=0;i<c;i++)
                 System.out.print(arr[0][i]+" ");
 
