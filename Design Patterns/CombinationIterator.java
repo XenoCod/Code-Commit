@@ -38,7 +38,7 @@ class CombinationIterator {
 
 class CombinationIterator{
 	public static void main(String[] args) {
-		Scanner sv;
+		Scanner sc;
 // Design the CombinationIterator class:
 
 // CombinationIterator(string characters, int combinationLength) Initializes the object with a string characters of sorted distinct lowercase English letters and a number combinationLength as arguments.
