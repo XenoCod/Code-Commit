@@ -7,7 +7,8 @@ class CombinationIterator {
         list= new ArrayList<>();
         this.len= combinationLength;
         backtrack(list, characters, len, new StringBuilder(), 0);  
-        nextIndex = 0;k    }
+        nextIndex = 0;
+            }
     
     public String next() {
         return list.get(nextIndex++);
