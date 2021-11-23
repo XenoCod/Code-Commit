@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Heap/|Bit Magic/|Mathematics/" kind="src" path=""/>
+	<classpathentry kind="src" path="Bit Magic"/>
+	<classpathentry kind="src" path="Heap"/>
+	<classpathentry kind="src" path="Mathematics"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
