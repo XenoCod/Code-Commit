@@ -1,6 +1,0 @@
-
-N	java:S106"9Replace this use of System.out or System.err by a logger.(§ÒèÃ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
- 
-java:S1598"„This file "AdjanceyList.java" should be located in "Codes/Graphs" directory, not in "/Users/aditya/Desktop/DSA /Code-Commit/Graphs".(‰¥§Ôûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰¥§Ôûÿÿÿÿ
